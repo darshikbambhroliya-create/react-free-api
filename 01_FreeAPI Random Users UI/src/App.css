@@ -1,0 +1,84 @@
+/* Page */
+.app {
+  min-height: 100vh;
+  background: radial-gradient(circle at top, #1a1a1a, #0b0b0b);
+  padding: 20px;
+  font-family: "Segoe UI", Arial, sans-serif;
+  color: #fff;
+}
+
+/* Button */
+.btn {
+  background: linear-gradient(135deg, #ffd60a, #ffb703);
+  color: #000;
+  border: none;
+  padding: 12px 22px;
+  font-size: 16px;
+  font-weight: 600;
+  border-radius: 10px;
+  cursor: pointer;
+  margin-bottom: 25px;
+  transition: 0.25s;
+}
+
+.btn:hover {
+  transform: translateY(-2px) scale(1.05);
+  box-shadow: 0 8px 20px rgba(255, 214, 10, 0.4);
+}
+
+/* Grid */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 20px;
+}
+
+/* Card */
+.card {
+  background: linear-gradient(145deg, #121212, #1c1c1c);
+  border-radius: 16px;
+  padding: 18px;
+  border: 1px solid rgba(255, 214, 10, 0.1);
+  transition: 0.3s;
+  position: relative;
+}
+
+/* Top accent line */
+.card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 4px;
+  width: 100%;
+  background: linear-gradient(90deg, #ffd60a, transparent);
+}
+
+/* Hover */
+.card:hover {
+  transform: translateY(-8px);
+  border-color: rgba(255, 214, 10, 0.4);
+  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.6), 0 0 15px rgba(255, 214, 10, 0.2);
+}
+
+/* Avatar */
+.avatar {
+  border-radius: 50%;
+  border: 2px solid #ffd60a;
+  margin-bottom: 10px;
+}
+
+/* Name */
+.name {
+  font-size: 18px;
+  font-weight: bold;
+  color: #ffd60a;
+  margin-bottom: 6px;
+}
+
+/* Text */
+.text {
+  font-size: 14px;
+  color: #ccc;
+  margin: 4px 0;
+}

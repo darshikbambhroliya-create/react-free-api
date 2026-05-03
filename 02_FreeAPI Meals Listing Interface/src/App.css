@@ -1,0 +1,106 @@
+/* ===== PAGE ===== */
+.app {
+  min-height: 100vh;
+  padding: 24px;
+  background: radial-gradient(circle at top, #1a1a1a, #050505 70%);
+  font-family: "Segoe UI", Arial, sans-serif;
+  color: #ffffff;
+}
+
+/* ===== BUTTON ===== */
+.btn {
+  background: linear-gradient(135deg, #ffd60a, #ffb703);
+  color: #000;
+  border: none;
+  padding: 12px 24px;
+  font-size: 15px;
+  font-weight: 600;
+  border-radius: 12px;
+  cursor: pointer;
+  margin-bottom: 28px;
+  transition: all 0.25s ease;
+}
+
+.btn:hover {
+  transform: translateY(-3px) scale(1.05);
+  box-shadow: 0 10px 25px rgba(255, 214, 10, 0.4);
+}
+
+/* ===== GRID ===== */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 22px;
+}
+
+/* ===== CARD ===== */
+.card {
+  background: linear-gradient(145deg, #121212, #1c1c1c);
+  border-radius: 16px;
+  padding: 18px;
+  border: 1px solid rgba(255, 214, 10, 0.1);
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+/* top yellow line */
+.card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 4px;
+  width: 100%;
+  background: linear-gradient(90deg, #ffd60a, transparent);
+}
+
+/* hover effect */
+.card:hover {
+  transform: translateY(-8px);
+  border-color: rgba(255, 214, 10, 0.4);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.7), 0 0 15px rgba(255, 214, 10, 0.25);
+}
+
+/* ===== TEXT ===== */
+
+/* Meal Name */
+.title {
+  font-size: 18px;
+  font-weight: bold;
+  color: #ffd60a;
+  margin-bottom: 6px;
+}
+
+/* Area badge */
+.area {
+  display: inline-block;
+  font-size: 12px;
+  color: #ffd60a;
+  background: rgba(255, 214, 10, 0.1);
+  padding: 4px 10px;
+  border-radius: 8px;
+  margin-bottom: 8px;
+}
+
+/* Tags */
+.tags {
+  font-size: 13px;
+  color: #bbb;
+  margin-bottom: 10px;
+}
+
+/* Links */
+.link {
+  font-size: 13px;
+  color: #ffd60a;
+  margin: 4px 0;
+  word-break: break-all;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.link:hover {
+  text-decoration: underline;
+  color: #ffea00;
+}
